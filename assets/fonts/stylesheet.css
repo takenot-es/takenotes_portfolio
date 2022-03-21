@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Bureau Grot Condensed';
+    src: url('/assets/fonts/BureauGrot-CondensedBlack.eot');
+    src: url('/assets/fonts/BureauGrot-CondensedBlack.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BureauGrot-CondensedBlack.woff2') format('woff2'),
+        url('/assets/fonts/BureauGrot-CondensedBlack.woff') format('woff'),
+        url('/assets/fonts/BureauGrot-CondensedBlack.ttf') format('truetype'),
+        url('/assets/fonts/BureauGrot-CondensedBlack.svg#BureauGrot-CondensedBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bureau Grot Condensed';
+    src: url('/assets/fonts/BureauGrot-CondensedBook.eot');
+    src: url('/assets/fonts/BureauGrot-CondensedBook.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BureauGrot-CondensedBook.woff2') format('woff2'),
+        url('/assets/fonts/BureauGrot-CondensedBook.woff') format('woff'),
+        url('/assets/fonts/BureauGrot-CondensedBook.ttf') format('truetype'),
+        url('/assets/fonts/BureauGrot-CondensedBook.svg#BureauGrot-CondensedBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-RegularItalic.eot');
+    src: url('/assets/fonts/PitchSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-RegularItalic.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-RegularItalic.woff') format('woff'),
+        url('/assets/fonts/PitchSans-RegularItalic.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-RegularItalic.svg#PitchSans-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-Bold.eot');
+    src: url('/assets/fonts/PitchSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-Bold.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-Bold.woff') format('woff'),
+        url('/assets/fonts/PitchSans-Bold.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-Bold.svg#PitchSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-Regular.eot');
+    src: url('/assets/fonts/PitchSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-Regular.woff') format('woff'),
+        url('/assets/fonts/PitchSans-Regular.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-Regular.svg#PitchSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pitch Sans';
+    src: url('/assets/fonts/PitchSans-BoldItalic.eot');
+    src: url('/assets/fonts/PitchSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/PitchSans-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/PitchSans-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/PitchSans-BoldItalic.ttf') format('truetype'),
+        url('/assets/fonts/PitchSans-BoldItalic.svg#PitchSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

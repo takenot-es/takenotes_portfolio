@@ -1,0 +1,39 @@
+<section class="work-loop-list">
+
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-title" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h4>
+                        Recent projects and write ups
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                {% assign sorted = site.work | sort: 'date' | reverse %}
+                {% for item in sorted | limit: 3 %}
+
+                        <div class="project-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                           <a href="{{ item.url }}">
+                               <h2 class="display-2">
+                                   {{ item.title }}
+                               </h2>
+                               <p class="text-muted">
+                                {% for category in item.categories %}
+                                    {{ category }}
+                                {% endfor %}
+                            </p>
+                           </a>
+                        </div>
+ 
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+<section class="home-about">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <p class="h2 outline-type outline-primary">
+                        About
+                    </p>
+                </div>
+                <div class="col-md-5">
+
+                    <h2 class="text-white">
+                        {{ section.lead_content }}
+                    </h2>
+                </div>
+                <div class="col-md-6 ml-auto text-white">
+                    {{ section.main_content }}
+                    <h5 class="text-white">
+                        Select Clients*
+                    </h5>
+                    <p>
+                        {% for item in site.data.clientlist %}
+                            {% if forloop.last %}
+                                {{ item.client }}. 
+                            {% else %}
+                                {{ item.client }}, 
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                    <p class="footnote">
+                        *Yeah there are more. I mean if you look at how design is structured at most mortgage companies... I'd say roughly 4,000+ individual clients? Plus, the odds and ends that I won't include due to NDAs, or them being mean and not paying their invoice.
+                    </p>
+                    <p class="mt-3">
+                        <a href="/about/" class="btn btn-outline-primary">
+                            <span class="mr-1">
+                                Read More
+                            </span>
+                            <span class="material-icons small">
+                                call_made
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

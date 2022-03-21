@@ -1,0 +1,37 @@
+title: Takenotes
+email: ryan@takenot.es
+author: Ryan Underwood
+description: Takenotes is the freelance design studio and portfolio of me, Ryan Underwood. I am a Senior Art Director, Designer, and quasi front-end developer... When needed. I can lorem ipsum with the best of 'em.
+baseurl: ""
+url: "http://takenot.es"
+twitter: takenot_es
+github:  takenot-es
+linkedin: https://www.linkedin.com/in/ryanwunderwood/
+dribbble: https://dribbble.com/ryanunderwood
+featured_image: https://s3.us-east-2.wasabisys.com/takenotes/personal/headshot.png
+logo: https://s3.us-east-2.wasabisys.com/takenotes/personal/logo.svg
+
+sass:
+  sass_dir: /assets/sass/
+  style: compressed
+
+collections: 
+  pages:
+    output: true
+    permalink: /:title/
+  work:
+    output: true
+    permalink: /:collection/:title/
+  writing:
+    output: true
+    permalink: /:collection/:title/
+
+
+
+google_tag:
+
+
+
+# Build settings
+plugins:
+  - jekyll-feed

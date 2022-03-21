@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% include /components/writing-header.html %}
+<article id="post" class="writing-post">
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-md-4 ml-auto">
+                {% include /components/blog-sidebar.html %}
+            </div>
+            <div class="col-md-7">
+                {{ page.content }}
+            </div>
+        </div>
+    </div>
+</article>

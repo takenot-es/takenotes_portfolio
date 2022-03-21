@@ -1,0 +1,119 @@
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding * .5);
+  margin-bottom: $jumbotron-padding;
+  color: $jumbotron-color;
+  background-color: $jumbotron-bg;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+}
+
+.home-header {
+  background-color: $dark;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  @extend .py-4;
+  position: relative;
+
+  #scroll-arrow {
+    width: 250px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    fill: $red;
+    right: 25%;
+    bottom: -150px;
+    z-index: 100;
+  }
+
+  .headshot {
+    position: absolute;
+    right: 0;
+    top: $spacer-4;
+    bottom: $spacer-4;
+    width: 40vw;
+    background-color: $yellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+  }
+
+  .lead-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .red-bar {
+      height: 1px;
+      margin-bottom: 2px;
+      background-color: $red;
+      flex-grow: 1;
+    }
+  }
+
+}
+
+.casestudy-header {
+  @extend .bg-dark;
+  @extend .py-6;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    height: 275px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $light;
+  }
+
+  &:before {
+    content: '';
+    height: 275px;
+    width: 1px;
+    background-color: $red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .featured-image {
+    height: 650px;
+    background-color: $red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+
+.writing-header {
+  @extend .bg-dark;
+  @extend .py-6;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+}

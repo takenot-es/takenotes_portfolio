@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://s3.us-east-2.wasabisys.com/takenotes/personal/favicon.png">
+<title>{% if page.url == "/" %}{{ site.title }} {% else %} {{ page.title }} || {{ site.title }}{% endif %}</title>
+{% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
+<meta name="description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
+
+ <!-- Facebook integration -->
+<meta property="og:title" content="{{ page.title }}"/>
+{% if page.featured_image %}<meta property="og:image" content="{{ page.featured_image }}"/>{% endif %}
+<meta property="og:url" content="http://takenot.es/{{ page.url }}"/>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
+
+<!-- Twitter integration -->
+<meta name="twitter:card" content="summary">
+{% if site.twitter_url %}<meta name="twitter:site" content="{{ site.twitter_url }}">{% endif %}
+<meta name="twitter:title" content="{{ page.title }}" />
+{% if page.featured_image %}<meta name="twitter:image" content="{{ page.featured_image }}" />{% endif %}
+<meta name="twitter:url" content="http://takenot.es/{{ page.url }}" />
+<meta name="twitter:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}" />
+
+<link rel="canonical" href="http://takenot.es/">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />

@@ -1,0 +1,20 @@
+<section class="client-list">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <h2 data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                    Notable <strong>Clients and Partners</strong> past and present
+                </h2>
+                <h2 class="text-light h1 mt-2 text-primary" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                    {% for item in site.data.clientlist %}
+                        {% if forloop.last %}
+                            {{ item.client }}
+                        {% else %} 
+                            {{ item.client }}, 
+                        {% endif %}
+                    {% endfor %}
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>

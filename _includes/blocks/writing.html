@@ -1,0 +1,61 @@
+<section class="writing">
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-title" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <h4>
+                        Insights, ideas, write-ups
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% assign sorted = site.writing | sort: 'date' | reverse %}
+            {% for item in sorted | limit: 3 %}
+                <div class="col-md-4 py-2" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    {% if item.external_link != null %}
+                        <a href="{{ item.external_link }}" target="_blank">
+                    {% else %}
+                        <a href="{{ item.url }}" target="_blank">
+                    {% endif %}
+                        <div class="writing-card bg-{% cycle 'red', 'yellow', 'blue' %}">
+                            <div class="writing-card-header">
+                                <p class="display-2 text-sans">
+                                    0{{ forloop.index }}
+                                </p>
+                                <p class="h5 text-display">
+                                    {{ item.title }}
+                                </p>
+                            </div>
+                            <div class="writing-card-content">
+                                <p>
+                                    {{ item.content | strip_html | truncate: 70 }}
+                                </p>
+                            </div>
+                            <div class="writing-card-cta mt-3">
+                            {% if item.external_link != null %}
+                                <p class="text-sans text-uppercase">
+                                    <strong>
+                                        External Link
+                                    </strong>
+                                </p>
+                            {% else %}
+                                <p class="text-sans text-uppercase">
+                                   <strong>
+                                        Read More
+                                   </strong>
+                                </p>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>

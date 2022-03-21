@@ -1,0 +1,59 @@
+<header class="casestudy-header">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto py-3">
+                    <h1 class="display-2 text-center text-white">
+                        {{ page.title }}
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 featured-image" style="background-image: url('{{ page.featured_image }}')">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="casestudy-about">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 pt-1 pb-2">
+                    <h2>
+                        {{ page.headline }}
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 py-2">
+                    <h6 class="text-blue">
+                        The Problem
+                    </h6>
+                    <p>
+                        {{ page.problem }}
+                    </p>
+                    <h6 class="text-blue">
+                        The Solution
+                    </h6>
+                    <p>
+                        {{ page.solution }}
+                    </p>
+                </div>
+                <div class="col-md-3 ml-auto py-2">
+                    <h6 class="text-blue">
+                        Services
+                    </h6>
+                    <ul class="list-unstyled p-0">
+                        {% for item in page.categories %}
+                            <li>
+                                {{ item }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

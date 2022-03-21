@@ -1,0 +1,13 @@
+<section class="cs-fullwidth-image">
+    <div class="container">
+        <div class="row">
+            {% for item in section.images %}
+                <div class="col-md-6 mx-auto">
+                    <p class="my-1">
+                        <img src="{{ item.image }}" alt="{{ item.alt }}" class="d-block w-100">
+                    </p>
+                </div>      
+            {% endfor %}
+        </div>
+    </div>
+</section>

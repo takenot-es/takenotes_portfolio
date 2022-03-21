@@ -1,0 +1,36 @@
+.writing-card {
+    @extend .py-3;
+    @extend .px-3;
+    height: 100%;
+
+    .display-1, .display-4, p {
+        color: $dark;
+    }
+
+    .display-4 {
+        font-size: $h4-font-size;
+    }
+
+}
+
+.blog-sidebar {
+    @extend .py-2;
+    @extend .px-2;
+    @extend .bg-sand;
+
+    &-header {
+        @extend .py-2;
+
+        .headshot {
+            height: 75px;
+            width: 75px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50rem;
+            @extend .mx-auto;
+        }
+
+    }
+
+}

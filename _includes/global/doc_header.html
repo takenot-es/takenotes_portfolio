@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include /global/header-includes/meta.html %}
+    {% include /global/header-includes/analytics.html %}
+    {% include /global/header-includes/styles.html %}
+</head>
+<body class="{{ site.title | downcase | remove: ' ' }} {{ page.title | downcase | remove: ' ' }} {{ page.url | strip_html | remove: '.html' | downcase }} wrapper body-wrapper {{ page.body_classes }}">
+{% include /global/navbar.html %}

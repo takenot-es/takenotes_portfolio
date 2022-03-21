@@ -1,0 +1,44 @@
+.work-loop-list {
+    background-color: $light;
+    @extend .pt-10;
+    @extend .pb-6;
+    position: relative;
+    z-index: 2;
+
+    .project-item {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        @extend .py-2;
+        transition: .2s ease-in-out padding;
+    }
+
+}
+
+.writing {
+    @extend .py-6;
+    
+}
+
+.casestudy-about {
+    background-color: $light;
+    @extend .py-4;
+}
+
+footer {
+    @extend .bg-dark;
+    @extend .py-3;
+}
+
+.writing-post {
+    @extend .py-6;
+
+    img {
+        display: block;
+        width: 100%;
+        @extend .my-1;
+    }
+
+}
