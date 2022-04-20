@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 {% assign sorted = site.work | sort: 'date' | reverse %}
-                {% for item in sorted | limit: 3 %}
+                {% for item in sorted | limit: 4 %}
 
                         <div class="project-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
                            <a href="{{ item.url }}">
